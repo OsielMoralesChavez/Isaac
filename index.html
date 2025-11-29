@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Isaac Calderón | Diseño de Imagen</title>
+    <title>Isaac Calderon | Diseño de Imagen</title>
     
-    <!-- CSS -->
+    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
-
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     
@@ -17,28 +16,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 
+
 </head>
 <body>
 
-    <!-- Navegación -->
+    <!-- Navegación (Capa de Esqueleto - Fija y Responsive) -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">ISAAC CALDERÓN.</a>
+            <a class="navbar-brand" href="#">ISAAC CALDERON.</a>
+            <!-- Toggler para móvil - Esqueleto y Responsiveness -->
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <!-- 1. ACERCA DE MÍ -->
                     <li class="nav-item"><a class="nav-link" href="#about">Acerca de</a></li>
+                    <!-- 2. SERVICIOS -->
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <!-- 3. PORTAFOLIO -->
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portafolio</a></li>
+                    <!-- 4. TESTIMONIOS -->
                     <li class="nav-item"><a class="nav-link" href="#clientes">Testimonios</a></li>
+                    <!-- 5. CONTACTO -->
                     <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section (Capa de Estrategia - Objetivo Principal y CTA) -->
     <section class="hero-section">
         <div class="container">
             <div class="row align-items-center">
@@ -47,11 +54,11 @@
                     <p class="lead mb-5 text-secondary">
                         Diseño de imagen estratégica y consultoría de estilo para marcas personales que buscan comunicar autoridad y elegancia.
                     </p>
-                    <a href="#contacto" class="btn btn-custom">Iniciar Transformación</a>
+                    <a href="#contacto" class="btn btn-custom">Iniciar Transformación</a> <!-- CTA Principal -->
                 </div>
                 <div class="col-lg-6 offset-lg-1 order-1 order-lg-2 mb-5 mb-lg-0">
                     <div class="hero-image-container">
-                        <!-- Placeholder elegante -->
+                        <!-- Responsiveness: la imagen se ajusta al 100% del ancho del contenedor en móvil -->
                         <img src="./img/ICP.png" alt="Diseño de Moda Minimalista" class="hero-image">
                     </div>
                 </div>
@@ -59,8 +66,31 @@
         </div>
     </section>
 
-    <!-- Mis Servicios -->
-    <section id="servicios" class="section-padding">
+    <!-- 1. Acerca de Mí (Capa de Estrategia - Construcción de Credibilidad) -->
+    <section id="about" class="section-padding"> 
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <!-- Responsiveness: La imagen se adapta al 100% del contenedor en todos los tamaños -->
+                    <img src="./img/ICP.png" alt="Retrato Diseñador" class="w-100" style="filter: grayscale(100%); object-fit: cover; height: 580px;">
+                </div>
+                <div class="col-lg-5 offset-lg-1">
+                    <span class="text-uppercase text-secondary small letter-spacing-2">Sobre Isaac</span>
+                    <h2 class="mb-4 mt-2">Diseño con propósito,<br>no por tendencia.</h2>
+                    <p class="text-secondary mb-4">
+                        Con más de 10 años en la industria de la moda y la comunicación visual, mi enfoque no es disfrazarte, sino revelar tu versión más auténtica y poderosa.
+                    </p>
+                    <p class="text-secondary mb-4">
+                        Creo firmemente en el minimalismo como herramienta de claridad. Elimino el ruido visual para que tu personalidad y tu competencia profesional sean los verdaderos protagonistas.
+                    </p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Signature_sample.svg/1200px-Signature_sample.svg.png" alt="Firma" style="height: 40px; opacity: 0.5;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Mis Servicios (Capa de Alcance/Estructura - Define las funcionalidades) -->
+    <section id="servicios" class="section-padding bg-light">
         <div class="container">
             <div class="row mb-5">
                 <div class="col-12 text-center">
@@ -69,6 +99,7 @@
                 </div>
             </div>
             <div class="row g-4">
+                <!-- Responsiveness: Las tarjetas se apilan en pantallas extra pequeñas, y se muestran 3 por fila en medianas y grandes -->
                 <div class="col-md-4">
                     <div class="service-card text-center">
                         <i class="bi bi-palette service-icon"></i>
@@ -94,30 +125,85 @@
         </div>
     </section>
 
-    <!-- Acerca de Mí -->
-    <section id="about" class="section-padding bg-light">
+    <!-- 3. Portafolio de Trabajos (Capa de Estructura - Organización visual de casos) -->
+    <section id="portfolio" class="section-padding">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-5 mb-lg-0">
-                    <img src="./img/ICP.png" alt="Retrato Diseñador" class="w-100" style="filter: grayscale(100%); object-fit: cover; height: 700px;">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <span class="text-uppercase text-secondary small letter-spacing-2">Proyectos Destacados</span>
+                    <h2 class="display-5 mt-2">Mi Portafolio</h2>
                 </div>
-                <div class="col-lg-5 offset-lg-1">
-                    <span class="text-uppercase text-secondary small letter-spacing-2">Sobre Isaac</span>
-                    <h2 class="mb-4 mt-2">Diseño con propósito,<br>no por tendencia.</h2>
-                    <p class="text-secondary mb-4">
-                        Con más de 10 años en la industria de la moda y la comunicación visual, mi enfoque no es disfrazarte, sino revelar tu versión más auténtica y poderosa.
-                    </p>
-                    <p class="text-secondary mb-4">
-                        Creo firmemente en el minimalismo como herramienta de claridad. Elimino el ruido visual para que tu personalidad y tu competencia profesional sean los verdaderos protagonistas.
-                    </p>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Signature_sample.svg/1200px-Signature_sample.svg.png" alt="Firma" style="height: 40px; opacity: 0.5;">
+            </div>
+            <div class="row g-4">
+                <!-- Responsiveness: col-md-4 (3 por fila en desktop), col-sm-6 (2 por fila en tablet/móvil) -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="portfolio-item shadow-sm">
+                        <img src="https://placehold.co/600x800/e8e8e8/333333?text=Identidad+Marca" alt="Identidad de Marca" class="img-fluid">
+                        <div class="portfolio-item-overlay">
+                            <h5 class="h6 mb-0">Identidad Corporativa Minimalista</h5>
+                            <small class="text-secondary">Branding Estratégico</small>
+                        </div>
+                    </div>
                 </div>
+                <!-- Proyecto 2 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="portfolio-item shadow-sm">
+                        <img src="https://placehold.co/600x800/e8e8e8/333333?text=Dirección+de+Arte" alt="Dirección de Arte" class="img-fluid">
+                        <div class="portfolio-item-overlay">
+                            <h5 class="h6 mb-0">Sesión Fotográfica Ejecutiva</h5>
+                            <small class="text-secondary">Dirección de Arte</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 3 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="portfolio-item shadow-sm">
+                        <img src="https://placehold.co/600x800/e8e8e8/333333?text=Diseño+Editorial" alt="Diseño Editorial" class="img-fluid">
+                        <div class="portfolio-item-overlay">
+                            <h5 class="h6 mb-0">Catálogo de Temporada SS24</h5>
+                            <small class="text-secondary">Diseño Editorial</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 4 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="portfolio-item shadow-sm">
+                        <img src="https://placehold.co/600x800/e8e8e8/333333?text=Consultoría+Estilo" alt="Consultoría de Estilo" class="img-fluid">
+                        <div class="portfolio-item-overlay">
+                            <h5 class="h6 mb-0">Transformación de Estilo Personal</h5>
+                            <small class="text-secondary">Consultoría de Imagen</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 5 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="portfolio-item shadow-sm">
+                        <img src="https://placehold.co/600x800/e8e8e8/333333?text=Vestuario+TV" alt="Vestuario TV" class="img-fluid">
+                        <div class="portfolio-item-overlay">
+                            <h5 class="h6 mb-0">Vestuario para Campaña de Televisión</h5>
+                            <small class="text-secondary">Styling</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 6 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="portfolio-item shadow-sm">
+                        <img src="./img/ICP.png" alt="Estrategia Visual" class="img-fluid">
+                        <div class="portfolio-item-overlay">
+                            <h5 class="h6 mb-0">Estrategia Visual para Redes Sociales</h5>
+                            <small class="text-secondary">Content & Strategy</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-custom">Ver Todos los Proyectos</a>
             </div>
         </div>
     </section>
 
-    <!-- Clientes Satisfechos -->
-    <section id="clientes" class="section-padding">
+    <!-- 4. Clientes Satisfechos (Capa de Estructura/Alcance - Prueba Social) -->
+    <section id="clientes" class="section-padding bg-light">
         <div class="container">
             <div class="row mb-5">
                 <div class="col-12 text-center">
@@ -125,20 +211,23 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-lg-8">
+                <div class="col-12"> 
+                    <!-- Carousel (Esqueleto - Interacción clara) -->
                     <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner text-center">
-                            <!-- Testimonio 1 -->
                             <div class="carousel-item active">
-                                <div class="quote-icon mb-3">"</div>
-                                <h4 class="mb-4 fst-italic fw-light">"Alex transformó completamente la manera en que me presento ante mis clientes. Su enfoque minimalista me dio la confianza que necesitaba para cerrar tratos importantes."</h4>
-                                <p class="text-uppercase small letter-spacing-2 fw-bold">— Sarah Johnson, CEO TechStart</p>
+                                <div class="col-lg-8 mx-auto">
+                                    <div class="quote-icon mb-3">"</div>
+                                    <h4 class="mb-4 fst-italic fw-light">"Isaac transformó completamente la manera en que me presento ante mis clientes. Su enfoque minimalista me dio la confianza que necesitaba para cerrar tratos importantes."</h4>
+                                    <p class="text-uppercase small letter-spacing-2 fw-bold">— Sarah Johnson, CEO TechStart</p>
+                                </div>
                             </div>
-                            <!-- Testimonio 2 -->
                             <div class="carousel-item">
-                                <div class="quote-icon mb-3">"</div>
-                                <h4 class="mb-4 fst-italic fw-light">"No se trata solo de ropa, se trata de estrategia. El análisis de color fue revelador. Altamente recomendado para cualquier profesional."</h4>
-                                <p class="text-uppercase small letter-spacing-2 fw-bold">— Miguel Ángel, Arquitecto</p>
+                                <div class="col-lg-8 mx-auto">
+                                    <div class="quote-icon mb-3">"</div>
+                                    <h4 class="mb-4 fst-italic fw-light">"No se trata solo de ropa, se trata de estrategia. El análisis de color fue revelador. Altamente recomendado para cualquier profesional."</h4>
+                                    <p class="text-uppercase small letter-spacing-2 fw-bold">— Miguel Ángel, Arquitecto</p>
+                                </div>
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
@@ -155,7 +244,7 @@
         </div>
     </section>
 
-    <!-- Contacto -->
+    <!-- 5. Contacto (Capa de Interacción - Punto de conversión crítico) -->
     <section id="contacto" class="section-padding bg-white">
         <div class="container">
             <div class="row justify-content-center">
@@ -167,6 +256,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <form onsubmit="event.preventDefault(); alert('Gracias por tu mensaje. Nos pondremos en contacto pronto.');">
+                        <!-- Formulario simple y directo - Esqueleto -->
                         <div class="mb-4">
                             <input type="text" class="form-control" placeholder="Tu Nombre" required>
                         </div>
@@ -183,9 +273,10 @@
                 </div>
             </div>
             <div class="row mt-5 text-center">
+                <!-- Responsiveness: Las columnas se apilan verticalmente en móvil y se centran con text-center -->
                 <div class="col-md-4">
                     <p class="small text-secondary text-uppercase mb-1">Email</p>
-                    <p>contacto@alexmorgan.com</p>
+                    <p>contacto@isaaccalderon.com</p>
                 </div>
                 <div class="col-md-4">
                     <p class="small text-secondary text-uppercase mb-1">Estudio</p>
@@ -193,7 +284,7 @@
                 </div>
                 <div class="col-md-4">
                     <p class="small text-secondary text-uppercase mb-1">Social</p>
-                    <p>@alexmorgan.design</p>
+                    <p>@isaaccalderon.design</p>
                 </div>
             </div>
         </div>
@@ -204,13 +295,13 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <h5 class="mb-0" style="font-family: 'Playfair Display', serif;">ISAAC CALDERÓN.</h5>
-                    <small class="text-secondary">© 2016 Todos los derechos reservados.</small>
+                    <h5 class="mb-0" style="font-family: 'Playfair Display', serif;">ISAAC CALDERON.</h5>
+                    <small class="text-secondary">© 2015 Todos los derechos reservados.</small>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="social-link"><i class="bi bi-pinterest"></i></a>
-                    <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                    <!-- Enlaces sociales para extensión de marca - Estrategia -->
+                    <a href="https://www.instagram.com/isaaccalderonparra?igsh=MW5oenpib3FpcG5mOQ%3D%3D&utm_source=qr" target="_blank" class="social-link"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@isaaccalderonp?_r=1&_t=ZS-91jfRzVgVge" target="_blank" class="social-link"><i class="bi bi-tiktok"></i></a>
                 </div>
             </div>
         </div>
@@ -219,7 +310,7 @@
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     
-    <!-- Script para navegación suave -->
+    <!-- Script para navegación suave (Mejora de la interacción - Estructura) -->
     <script src="./js/script.js"></script>
 </body>
 </html>
